@@ -1,4 +1,4 @@
-all: histogram.tsv
+all: histogram.png
 
 clean:
 	rm -f words.txt histogram.tsv histogram.png
