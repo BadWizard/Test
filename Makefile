@@ -1,7 +1,7 @@
 all: histogram.tsv
 
 clean:
-	rm -f words.txt histogram.tsv
+	rm -f words.txt histogram.tsv histogram.png
 	
 words.txt: /usr/share/dict/words
 	cp $< $@
