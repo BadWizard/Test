@@ -1,0 +1,19 @@
+---
+title: "Histogram of English Word Lengths"
+author: "Nikolay Iskrev"
+date: "January 30, 2016"
+output: html_document
+---
+
+![*Fig. 1* A histogram of English word lengths](histogram.png)
+
+
+
+```{r load-data}
+data <- read.delim("histogram.tsv")
+```
+
+```{r analyze-data}
+most.common.length <- data$Length[which.max(data$Freq)]
+```
+The most common English word length is `r most.common.length`.
